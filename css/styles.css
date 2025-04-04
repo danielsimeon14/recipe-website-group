@@ -1,0 +1,12 @@
+body{
+    background-color: whitesmoke;
+}
+
+.logo{
+    text-align: center;
+   overflow: hidden;
+}
+
+.logo img{
+border-radius: 20rem;
+}
