@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
  margin: 0;
  /* background-color:whitesmoke; */
@@ -265,3 +266,17 @@ it will display when you click the button */
 
 /* hiddden section ends */
 
+=======
+body{
+    background-color: whitesmoke;
+}
+
+.logo{
+    text-align: center;
+   overflow: hidden;
+}
+
+.logo img{
+border-radius: 20rem;
+}
+>>>>>>> 574f7017d87b30d715a459941dfb6c3b4b82b29c
