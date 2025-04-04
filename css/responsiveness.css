@@ -1,0 +1,63 @@
+@media screen and (max-width:767px) {
+    body{
+        padding: 0;
+        margin: 1px;
+        max-width: 480px;
+        align-self: center;
+    }
+    .intro{
+        display: block;
+        width: 100%;
+    }
+
+    .veg-overall{
+        min-height: fit-content;
+        gap: 10px;
+        height: 200vh;
+        
+    }
+
+    .first,.second{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+    #vegetarian{
+        padding-left: 2px;
+        padding-right: 1px;
+        width:100% ;
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: min-content;
+        gap: 1px;
+    }
+    
+    .first, .second{
+        box-sizing: content-box;
+        border-radius:6px ;
+        /* background-color: yellowgreen; */
+        border-color: yellowgreen solid;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    div .image img{
+        width: fit-content;
+        position: absolute;
+
+    }
+    .veg-content, .fitness-images{
+        display: block;
+        
+    }
+
+    .veg-content .image{
+        size: 80%;
+    }
+    
+}
