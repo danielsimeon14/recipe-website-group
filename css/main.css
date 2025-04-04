@@ -1,0 +1,793 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.roboto-font{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .work-sans{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  header{
+background-color: whitesmoke;
+  }
+
+  .my_nav.display{
+    background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+    z-index: 2;
+  }
+
+  .subnav{
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    animation: slide 0.5s ease-in forwards;
+  }
+
+  .subnav h3{
+    background-color: greenyellow;
+     color: white; 
+     position: relative;
+      padding: 5px;
+      padding-left: 10rem;
+      padding-right: 18.9rem;
+  }
+
+  .subnav h3 i{
+    color: red;
+   position: absolute;
+   cursor: pointer;
+   font-size: 20px;
+  }
+
+  .subnav h3 .play{
+    display: none;
+  }
+
+.my_nav{
+    display: flex;
+    gap: 23rem;
+    padding: 0.8rem 4rem 0.8rem ;
+    position: fixed;
+    overflow: hidden;
+}
+
+.myh1{
+  animation: 1s up ease-out forwards;
+}
+
+.myh1 span:nth-child(1){
+color: orangered;
+}
+
+.myh1 span:nth-child(2){
+color:yellowgreen;
+}
+.nav_links{
+display: flex;
+gap: 2rem;
+position: relative;
+right: 15rem;
+font-size: 18px;
+padding-top:0.8rem;
+animation: 1s up ease-out forwards;
+}
+
+.off{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.input-open {
+  visibility: visible;
+}
+
+.nav_links i{
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    bottom: 3px;
+}
+
+.nav_links li{
+  list-style: none;
+}
+
+
+.nav_links li span{
+  display: none;
+}
+
+.nav_links a{
+text-decoration: none;
+font-weight: 600;
+color: black;
+transition: 0.3s ease;
+}
+
+.nav_links a:hover,
+.nav_links a.active{
+  color: yellowgreen;
+}
+
+.nav_links li .ri-contrast-2-line{
+cursor: pointer;
+}
+/*another header section */
+.work-sans{
+  display: flex;
+  position: relative;
+  top: 14rem;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+.san1{
+  position: relative;
+  padding-bottom: 32rem;
+  margin-left: 4.8rem;
+  position: relative;
+  top: 2rem;
+}
+
+.san1 h4{
+font-weight: 545;
+font-size: 18px;
+letter-spacing: 2px;
+opacity: 0;
+animation: 1s slide ease-out forwards;
+}
+
+.san1 h2{
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+letter-spacing: 2px;
+opacity: 0;
+animation: 1.4s slide ease-out forwards;
+}
+
+.san1 h3{
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: lightgreen;
+  opacity: 0;
+animation: 1.8s slide ease-out forwards;
+}
+
+.san1 p{
+  color: gainsboro;
+  font-weight: 300;
+  opacity: 0;
+animation: 2s slide ease-out forwards;
+}
+
+.san1 button{
+  background: lightgreen;
+  padding: 0.5rem 1.5rem ;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  opacity: 0;
+animation: 1.5s slide ease-out forwards;
+}
+
+.san2 img{
+  position: relative;
+  right: 10rem;
+  bottom: 100px;
+  height: 100vh;
+  opacity: 0;
+  animation: 2s up ease-out forwards ;
+}
+
+/* main */
+/* categories section */
+
+.cate{
+  margin-top: 7rem;
+}
+
+.cate h1{
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  padding: 2rem;
+}
+
+.figures{
+  display: flex;
+  gap: 3rem;
+  padding-left: 2.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.figures .f{
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.29);
+  padding: 1.7rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.figures figcaption{
+  font-weight: bolder;
+  color: yellowgreen;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: wheat;
+  font-family: sans-serif;
+}
+
+/* simple and tasty recipe */
+#tasty{
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.tasty{
+text-align: center;
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 2rem;
+}
+
+.tasty h1{
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  color: yellowgreen;
+  text-transform: capitalize;
+}
+
+.tasty p{
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  color: gray;
+}
+
+.recipe{
+display: flex;
+gap: 4rem;
+}
+
+.recipe .cipe-1{
+ box-shadow:  5px 2px 5px rgba(0, 0, 0, 0.187);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.cipe-1 img{
+  border-radius: 15px;
+}
+
+.cipe-1 figcaption{
+  font-size: 25px;
+  text-transform: capitalize;
+  color: yellowgreen;
+  padding: 20px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.11);
+}
+
+/* about section */
+.about{
+  display: flex;
+  margin-left: 10rem;
+}
+
+.out1{
+  font-family: sans-serif;
+  margin-top: 10rem;
+}
+
+.out1 h1{
+text-transform: capitalize;
+font-size: 40px;
+color: yellowgreen;
+}
+
+.out1 p{
+  margin-top: 20px;
+  color:gray;
+}
+
+.out1 button{
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+}
+
+.out2 img{
+  padding-left: 4rem;
+}
+
+/* CHEFS SECTION */
+.chefs{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.chefs h1{
+  font-family: sans-serif;
+  font-size: 50px;
+  color: yellowgreen;
+  padding-bottom: 30px;
+}
+
+.see{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-left: 5rem;
+  text-align: center;
+}
+
+.see h2{
+  padding: 30px;
+  color: yellowgreen;
+  font-family: sans-serif;
+}
+
+/* footer */
+.inbox{
+   background-image: url(/img/footer-img.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: sans-serif; 
+  margin-left: 9rem;
+  margin-right: 9rem;
+  padding: 3rem;
+  margin-top: 4rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.inbox h1{
+  font-size: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  color: yellowgreen;
+}
+
+.inbox p{
+  color:white;
+  text-align: center;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inbox input{
+padding: 20px 30px;
+padding-right: 10rem;
+border-radius: 15px;
+background-color: white;
+border: 2px solid yellowgreen;
+}
+
+.inbox button{
+  position: relative;
+  right: 7rem;
+  padding: 10px 40px;
+  padding-right: 3rem;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+  font-size: 15px;
+ margin-left: 10px;
+ border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* copyright section */
+.name{
+  padding: 1rem;
+  margin-left: 5rem;
+  font-family: sans-serif;
+}
+
+.name p{
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.copy{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.foot {
+  opacity: 0;
+}
+
+hr{
+  margin-left: 6rem;
+  margin-right: 8rem;
+}
+
+.copy em{
+}
+
+.get{
+  margin-right: 9rem;
+  display: flex;
+  gap: 15px;
+}
+/* responsivness */
+@media  screen and  (max-width:767px){
+
+.my_nav {
+    display: flex;
+    gap: 0rem;
+    padding: 1.5rem;
+    overflow: hidden;
+    padding-right: 30rem;
+    position: fixed;
+    background: whitesmoke;
+    box-shadow: 0px 0px 5px 15px rgba(0, 0, 0, 0.153);
+    z-index: 10;
+}
+
+.nav_links{
+ display: grid;
+  gap: 2rem;
+  font-size: 18px;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.nav_links li {
+ margin-top: 2rem;
+}
+
+ .nav_input {
+  background-color: transparent;
+  padding: 0.9rem;
+  display: none;
+  padding-left: 2rem;
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+  position: relative;
+  left: 0rem;
+  top: 3rem;
+  bottom: 0px;
+  cursor: pointer;
+  color: white;
+}
+
+/* hamburger menu */
+.hamburger{
+  margin-left: 6rem;
+ }
+ 
+ .hamburger div{
+ width: 35px;
+ height: 5px;
+ background-color: black;
+ margin: 6px 0;
+ padding: 0;
+ margin-bottom: 0;
+ transition: .4s; 
+ }
+ 
+ .bar2{
+   width: 10px;
+ }
+ 
+ .nav-response{
+ display: flex;
+ gap: 5rem;
+ }
+ 
+ .change .bar1{
+   transform: translate(0, 11px) rotate(-45deg);
+ }
+ 
+ .change .bar2{
+   opacity: 0;
+ }
+ 
+ .change .bar3{
+   transform: translate(0, -11px) rotate(45deg);
+ }
+
+.work-sans {
+  position: relative;
+  top: 9rem;
+  margin-left: 1rem;
+}
+
+.san1 {
+  position: relative;
+  padding-bottom: 19rem;
+  margin-left: 0rem;
+  position: relative;
+  top: 2rem;
+  text-align: left;
+}
+
+.san2 img {
+display: none;
+}
+
+.san1 h4 {
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.san1 h3 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.off{
+  display: flex;
+  gap: 2rem;
+}
+
+/* categories section */
+
+.figures {
+  display: grid;
+  gap: 10px;
+  padding-left: 0rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.figures .f {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#tasty {
+  margin-top: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  overflow: hidden;
+}
+
+.tasty {
+  text-align: left;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+}
+
+.recipe {
+  display: grid;
+  gap: 4rem;
+}
+
+/* about section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0rem;
+  margin-left: 0rem;
+}
+
+/* my footer */
+.inbox {
+  font-family: sans-serif;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 15px;
+}
+
+.inbox p {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  font-size: 15px;
+}
+
+.out2 img {
+  padding-left: 0rem;
+  width: 100vw;
+}
+
+.inbox button {
+  position: relative;
+  right: 0rem;
+  margin-top: 20px;
+}
+
+/* sub footer */
+
+hr {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.name {
+  padding: 0rem;
+  margin-left: 0rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.copy {
+  display: grid;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0rem;
+}
+
+.foot {
+  display: none;
+}
+.get {
+  margin-right: 0rem;
+  margin-left: 6.5rem;
+  gap: 10px;
+  text-align: center;
+}
+
+/* chef section */
+.see {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0rem;
+  text-align: center;
+}
+
+.chefs h1 {
+  padding-bottom: 10px;
+}
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px){
+  .my_nav {
+    display: flex;
+    gap: 8rem;
+    padding:1.5rem;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .nav_links {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    right: 14rem;
+    font-size: 18px;
+    padding-top: 0.8rem;
+}
+
+.nav_links .nav_input {
+  display: none
+}
+
+.work-sans {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 9rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.san1 {
+  padding-bottom: 5rem;
+  margin-left: 4.8rem;
+}
+
+/* categories section */
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+#tasty {
+  margin-top: 5rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  overflow: hidden;
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+
+}
+
+
+.san2 img {
+  position: relative;
+  right: 0rem;
+  width: 100vw;
+  bottom: 0px;
+  height: 60vh;
+}
+
+/*my about section */
+.about {
+  display: grid;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+/* footer section */
+.inbox {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.name {
+  padding: 1rem;
+  margin-left: 0rem;
+  font-family: sans-serif;
+}
+
+hr {
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+}
+/* input display */
+@keyframes slide {
+  from{
+    transform: translateX(90px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from{
+    transform: translateY(90px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
